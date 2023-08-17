@@ -1,18 +1,19 @@
 "use client";
 
-import { Fragment } from "react";
+import type { FC } from "react";
 
-const project = () => {
+import { Body, Header, Project } from "./style";
+
+interface Props {
+  num: number;
+}
+
+const project: FC<Props> = ({ num }) => {
   return (
-    <Fragment>
-      <div
-        className="header"
-        style={{ width: "100%", background: "blue", borderRadius: "0.5em" }}
-      >
-        Header
-      </div>
-      <div className="body">Body</div>
-    </Fragment>
+    <Project num={num}>
+      <Header>Header</Header>
+      <Body>Body</Body>
+    </Project>
   );
 };
 
