@@ -5,11 +5,10 @@ import { useState } from "react";
 import { ProjectMaincontainer } from "./style";
 import ProjectDetail from "../projectdetail";
 
-//ProjectMaincontainer
 
 const Project = () => {
   const [list, setList] = useState(Array.from({ length: 4 }, (e) => e));
-
+   
   return (
     <ProjectMaincontainer>
       {list.map((e, index) => {
@@ -20,6 +19,3 @@ const Project = () => {
 };
 
 export default Project;
-
-{
-}
