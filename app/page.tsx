@@ -4,6 +4,9 @@ import React, { useEffect, useState, useRef } from "react";
 
 import Introduce from "../components/introduce";
 import Project from "../components/project";
+import Education from "../components/education";
+
+import Skills from "@components/Skills";
 
 import "../styles/page.css";
 
@@ -29,6 +32,7 @@ function Home({}: Props) {
 
       //스크롤 내릴때
       // Scrolltop : 스크롤바 수직위치
+      // && animation
       if (deltaY > 0) {
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           setAnimation(true);
@@ -105,22 +109,22 @@ function Home({}: Props) {
   return (
     <div className="outer Page-box" ref={outerDivRef}>
       <div className="inner">
-        <Introduce />
+        <Introduce animation={animation} />
       </div>
       <div className="divider" />
+      <div className="inner">
+        <Education animation={animation2} />
+      </div>
+      <div className="divider"></div>
+      <div className="inner">
+        <Skills animation={animation3} />
+      </div>
+      <div className="divider"></div>
       <div className="inner">
         <Project />
       </div>
       <div className="divider"></div>
       {/* <div className="inner">
-        <Generate animation2={animation2} />
-      </div>
-      <div className="divider"></div>
-      <div className="inner">
-        <Menu animation3={animation3} />
-      </div>
-      <div className="divider"></div>
-      <div className="inner">
         <Chat animation4={animation4} />
       </div>
       <div className="divider"></div> */}

@@ -16,6 +16,7 @@ export const goupsc = keyframes`
 `;
 
 export const Introdmaincontainer = styled.div`
+  background-color: #ff7e36;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -33,6 +34,9 @@ export const Introdmaincontainer = styled.div`
   }
 
   & p {
+    background-color: white;
+    border-radius: 25px;
+    padding: 5%;
     font-size: 30px;
     line-height: 50px;
     font-weight: 500;

@@ -7,9 +7,12 @@ import Image from "next/image";
 
 import { Introdmaincontainer } from "./style";
 
-interface Props {}
+interface Props {
+  animation: boolean;
+}
 
-const Introduce: FC<Props> = () => {
+const Education: FC<Props> = ({ animation }) => {
+  console.log(animation);
   const moveRef = useRef<HTMLDivElement>(undefined);
 
   const [pop, setPop] = useState<boolean>(false);
@@ -81,4 +84,4 @@ const Introduce: FC<Props> = () => {
   );
 };
 
-export default Introduce;
+export default Education;
