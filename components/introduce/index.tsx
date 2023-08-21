@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type FC } from "react";
+import { type FC, useEffect, useRef, useState } from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -14,9 +14,16 @@ const Introduce: FC<Props> = () => {
 
   const [pop, setPop] = useState<boolean>(false);
 
+  const [alert, alertSet] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      alertSet(true);
+    }, 5000);
+  });
+
   const move = () => {
     moveRef.current.classList.add("go");
-
     setPop(true);
   };
 
@@ -54,7 +61,20 @@ const Introduce: FC<Props> = () => {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <p>자기소개입니다.</p>
+          <p>
+            안녕하세요! :) <br />
+            개발 및 코딩자체를사랑하는 <br />
+            신입웹개발자입니다
+          </p>
+          {alert ? (
+            <Image
+              className="DownArrow"
+              src="/down-arrow.png"
+              width={30}
+              height={30}
+              alt="/"
+            />
+          ) : undefined}
         </motion.div>
       ) : undefined}
     </Introdmaincontainer>

@@ -1,5 +1,10 @@
 import styled, { keyframes } from "styled-components";
 
+export const updown = keyframes`
+  0% {margin-top: 0px;}
+	100% {margin-top: 15vh;}
+`;
+
 export const goupfr = keyframes`
   from{ transform: translateY(60rem);opacity:0;}
   to{ transform: translateX(0rem);  opacity:1}
@@ -23,7 +28,25 @@ export const Introdmaincontainer = styled.div`
   }
 
   & .go {
-    transform: translate(0, -30vh);
-    transition: 0.5s ease-in-out;
+    transform: translate(0, -10vh);
+    transition: 1s ease-in-out;
+  }
+
+  & p {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+  & .DownArrow {
+    opacity: 0.5;
+    margin-top: 15vh;
+    animation: ${updown} 1.5s;
+  }
+
+  & .intordbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
 `;
