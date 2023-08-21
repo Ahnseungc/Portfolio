@@ -34,7 +34,7 @@ function Home({}: Props) {
   return (
     <div className="main-container">
       <Introduce />
-      <Project />
+      {/* <Project /> */}
     </div>
   );
 }
