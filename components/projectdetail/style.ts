@@ -7,19 +7,22 @@ export const Project = styled.div<{ num: number }>`
   display: flex;
   flex-direction: column;
   transform: perspective(500px) rotateY(40deg);
-
+  transition: 1s ease-in-out;
   position: absolute;
 
   left: ${(props) => `${props.num * 10}vh`};
-
-  &:hover {
-    /* transform: perspective(500px) rotateY(40deg) translateZ(5rem);
-     */
-    transform: translate(0, -30vh);
-    transition: 1s ease-in-out;
-    /* transition: 0.5s ease-in-out; */
-  }
 `;
+
+// export const MouseOver = keyframes`
+// from{
+//   transform: translate(0, -0);
+//     transition: 1s ease-in-out;
+// }
+// to{
+//   transform: translate(0, -30vh);
+//     transition: 1s ease-in-out;
+// }
+// `;
 
 export const Header = styled.div`
   height: 5%;

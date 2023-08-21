@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 export const updown = keyframes`
   0% {margin-top: 0px;}
-	100% {margin-top: 15vh;}
+	100% {margin-top: 6vh;}
 `;
 
 export const goupfr = keyframes`
@@ -12,7 +12,7 @@ export const goupfr = keyframes`
 
 export const goupsc = keyframes`
   from{ transform: translateX(0rem);opacity:1;}
-  to{ transform: translateX(-20rem);  opacity:1}
+  to{ transform: translateX(-1rem);  opacity:1}
 `;
 
 export const Introdmaincontainer = styled.div`
@@ -39,8 +39,10 @@ export const Introdmaincontainer = styled.div`
   }
   & .DownArrow {
     opacity: 0.5;
-    margin-top: 15vh;
-    animation: ${updown} 1.5s;
+
+    top: 90vh;
+    animation: ${updown} infinite 1.5s;
+    position: fixed;
   }
 
   & .intordbox {

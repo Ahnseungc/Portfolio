@@ -1,6 +1,6 @@
 "use client";
 
-import type { FC } from "react";
+import { type FC, useCallback, useRef } from "react";
 
 import Image from "next/image";
 
@@ -10,11 +10,28 @@ interface Props {
   header: String;
   body: any;
   id: number;
+  sta: boolean;
 }
 
-const project: FC<Props> = ({ header, body, id }) => {
+const ProjectDetail: FC<Props> = ({ header, body, id }) => {
+  const mouseRef = useRef<HTMLDivElement>(undefined);
+
+  const mouseovercontroller = useCallback(() => {
+    mouseRef.current.style.transform = "translate(0, -30vh) ";
+  }, []);
+
+  const mouseoutcontroller = useCallback(() => {
+    mouseRef.current.style.transform = "perspective(500px) rotateY(40deg) ";
+  }, []);
+
   return (
-    <Project num={id}>
+    <Project
+      className={`${id}`}
+      num={id}
+      onMouseEnter={mouseovercontroller}
+      onMouseLeave={mouseoutcontroller}
+      ref={mouseRef}
+    >
       <Header>
         {header}
         <div className="circle_room">
@@ -36,4 +53,4 @@ const project: FC<Props> = ({ header, body, id }) => {
   );
 };
 
-export default project;
+export default ProjectDetail;
