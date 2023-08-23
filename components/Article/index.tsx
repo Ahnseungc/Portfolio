@@ -11,7 +11,6 @@ import type { ItemProps } from "../List";
 
 const Article = ({ id }: { id: string }) => {
   const { category, title } = data.find((data: ItemProps) => data.id === id.id);
-  const scrollPosition = getCookie("scroll_position");
 
   return (
     <motion.div

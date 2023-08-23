@@ -18,17 +18,11 @@ interface Props {
 const Skills: FC<Props> = ({ animation }) => {
   const { id } = useParams();
 
-  const afterLoad = () => {
-    var scrollPosition = getCookie("scroll_position");
-    console.log(Number(scrollPosition));
-    window.scrollTo(Number(scrollPosition), 0);
-  };
-
   return (
     <Container>
       <Header />
       <AnimatePresence>{id && <Article id={id} />}</AnimatePresence>
-      <List selectedId={id !== undefined ? id : ""} afterLoad={afterLoad} />
+      <List selectedId={id !== undefined ? id : ""} />
     </Container>
   );
 };

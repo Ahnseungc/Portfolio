@@ -151,14 +151,6 @@
   margin-bottom: 4vmin;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Pretendard", -apple-system, BlinkMacSystemFont,
-    "Apple SD Gothic Neo", "Segoe UI", "Malgun Gothic", "맑은 고딕", sans-serif;
-}
-
 ul,
 li {
   list-style: none;
@@ -169,9 +161,4 @@ li {
 .link {
   text-decoration: none;
   color: black;
-}
-
-body {
-  padding: 5vmin;
-  background-color: rgb(255, 255, 255);
 }
