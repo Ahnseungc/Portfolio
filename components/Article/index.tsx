@@ -11,13 +11,7 @@ import type { ItemProps } from "../List";
 
 const Article = ({ id }: { id: string }) => {
   const { category, title } = data.find((data: ItemProps) => data.id === id.id);
-
-  const afterLoad = () => {
-    var category = getCookie("category");
-    var scrollPosition = getCookie("scroll_position");
-    console.log(Number(scrollPosition));
-    window.scrollTo(Number(scrollPosition), 0);
-  };
+  const scrollPosition = getCookie("scroll_position");
 
   return (
     <motion.div
@@ -27,7 +21,7 @@ const Article = ({ id }: { id: string }) => {
       exit={{ opacity: 0, transition: { duration: 0.15 } }}
     >
       <motion.div layoutId={`item-motion-${id}`}>
-        <Link href="/" className="backbtn" onClick={afterLoad}>
+        <Link href={"/"} className="backbtn">
           Back
         </Link>
         <motion.div className="image-motion" layoutId={`image-motion-${id}`}>

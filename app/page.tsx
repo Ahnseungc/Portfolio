@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 
-import { getCookie, setCookie, removeCookies } from "cookies-next";
+import { getCookie, setCookie } from "cookies-next";
 
 import Education from "../components/education";
 import Introduce from "../components/introduce";
@@ -13,9 +13,7 @@ import "../styles/page.css";
 
 const DIVIDER_HEIGHT = 5;
 
-type Props = {
-  scRef: HTMLDivElement;
-};
+type Props = {};
 
 function Home({ params }: { params: { id: number } }): Props {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
@@ -25,6 +23,13 @@ function Home({ params }: { params: { id: number } }): Props {
   const [animation4, setAnimation4] = useState<boolean>(false);
 
   useEffect(() => {
+    const scrollPosition = Number(getCookie("scroll_position"));
+
+    if (scrollPosition > 100) {
+      console.log(scrollPosition);
+      outerDivRef.current.scrollTo({ top: scrollPosition, left: 0 });
+      setCookie("scroll_position", 0);
+    }
     const wheelHandler = (e) => {
       e.preventDefault();
       const { deltaY } = e;
