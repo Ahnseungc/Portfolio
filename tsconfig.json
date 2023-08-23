@@ -52,7 +52,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "app/[id].js"  ],
   "exclude": [
     "node_modules"
   ]

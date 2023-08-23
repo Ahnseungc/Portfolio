@@ -2,11 +2,12 @@
 
 import React, { useEffect, useState, useRef } from "react";
 
+import { getCookie, setCookie, removeCookies } from "cookies-next";
+
+import Education from "../components/education";
 import Introduce from "../components/introduce";
 import Project from "../components/project";
-import Education from "../components/education";
-
-import Skills from "@components/Skills";
+import Skills from "../components/Skills";
 
 import "../styles/page.css";
 
@@ -16,7 +17,7 @@ type Props = {
   scRef: HTMLDivElement;
 };
 
-function Home({}: Props) {
+function Home({ params }: { params: { id: number } }): Props {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
   const [animation, setAnimation] = useState<boolean>(false);
   const [animation2, setAnimation2] = useState<boolean>(false);
@@ -30,7 +31,6 @@ function Home({}: Props) {
       const { scrollTop } = outerDivRef.current;
       const pageHeight = window.innerHeight; //화면 세로길이
 
-      //스크롤 내릴때
       // Scrolltop : 스크롤바 수직위치
       // && animation
       if (deltaY > 0) {
