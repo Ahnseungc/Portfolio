@@ -17,6 +17,7 @@ type Props = {};
 
 function Home({ params }: { params: { id: number } }): Props {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
+  const BackDivRef = useRef<HTMLDivElement>(undefined);
   const [animation, setAnimation] = useState<boolean>(false);
   const [animation2, setAnimation2] = useState<boolean>(false);
   const [animation3, setAnimation3] = useState<boolean>(false);
@@ -105,11 +106,17 @@ function Home({ params }: { params: { id: number } }): Props {
     };
     const outerDivRefCurrent = outerDivRef.current;
 
-    outerDivRefCurrent.addEventListener("wheel", wheelHandler);
+    outerDivRefCurrent.addEventListener("touchmove", wheelHandler);
     return () => {
-      outerDivRefCurrent.removeEventListener("wheel", wheelHandler);
+      outerDivRefCurrent.removeEventListener("touchmove", wheelHandler);
     };
   }, []);
+
+  const backChange = (e: any) => {
+    BackDivRef.current.className = "inner";
+    console.log(e);
+    BackDivRef.current.classList.add(`back${e}`);
+  };
 
   return (
     <div className="outer Page-box" ref={outerDivRef}>
@@ -125,8 +132,8 @@ function Home({ params }: { params: { id: number } }): Props {
         <Skills animation={animation3} />
       </div>
       <div className="divider"></div>
-      <div className="inner">
-        <Project />
+      <div className="inner" ref={BackDivRef}>
+        <Project Changeback={backChange} />
       </div>
       <div className="divider"></div>
       {/* <div className="inner">

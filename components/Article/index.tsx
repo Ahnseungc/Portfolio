@@ -1,4 +1,3 @@
-import { getCookie, setCookie, removeCookies } from "cookies-next";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,15 +22,10 @@ const Article = ({ id }: { id: string }) => {
         <Link href={"/"} className="backbtn">
           Back
         </Link>
-        <motion.div className="image-motion" layoutId={`image-motion-${id}`}>
-          <Image
-            className="image"
-            width={100}
-            height={100}
-            src={"/"}
-            alt={id}
-          />
-        </motion.div>
+        <motion.div
+          className="image-motion"
+          layoutId={`image-motion-${id}`}
+        ></motion.div>
         <div className="content">
           <motion.div className="title-motion" layoutId={`title-motion-${id}`}>
             <span className="category">{category}</span>

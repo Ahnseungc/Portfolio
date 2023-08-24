@@ -11,13 +11,15 @@ interface Props {
   body: any;
   id: number;
   sta: boolean;
+  onChangeback: any;
 }
 
-const ProjectDetail: FC<Props> = ({ header, body, id }) => {
+const ProjectDetail: FC<Props> = ({ header, body, id, onChangeback }) => {
   const mouseRef = useRef<HTMLDivElement>(undefined);
 
   const mouseovercontroller = useCallback(() => {
     mouseRef.current.style.transform = "translate(0, -30vh) ";
+    onChangeback(id);
   }, []);
 
   const mouseoutcontroller = useCallback(() => {

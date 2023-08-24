@@ -9,12 +9,12 @@
   overflow: hidden;
   position: relative;
   display: flex;
-  height: 40vmin;
+  height: 30vh;
   justify-content: center;
   flex-direction: column;
   font-size: 3vmin;
   text-align: left;
-  background-color: #fff;
+  background-color: antiquewhite;
   border-radius: 3vmin;
 
   & > div {
@@ -31,6 +31,7 @@
   }
 
   .content {
+    background-color: antiquewhite;
     position: relative;
     display: flex;
     align-items: center;
@@ -102,7 +103,6 @@
 
   .content {
     height: 50vmin;
-    background-color: #fff;
     padding: 6vmin 4vmin;
     overflow-y: auto;
   }

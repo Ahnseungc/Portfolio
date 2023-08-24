@@ -9,7 +9,7 @@ export const data = [
   },
   // Photo by Dennis Brendel on Unsplash
   {
-    id: "NEXTJS",
+    id: "NEXT",
     category: "NEXTJS",
     title: "NEXTJS입니다.",
     pointOfInterest: 120,

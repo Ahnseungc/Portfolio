@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ProjectMaincontainer } from "./style";
 import ProjectDetail from "../projectdetail";
 
-const Project = () => {
+const Project = ({ Changeback }) => {
   const [list, setList] = useState([
     { id: 1, header: "URi.com", body: "/Uri.png", sta: false },
     { id: 2, header: "Speakdoc.com", body: "/Dawn.png", sta: false },
@@ -23,6 +23,7 @@ const Project = () => {
             id={e.id}
             key={index}
             sta={e.sta}
+            onChangeback={Changeback}
           />
         );
       })}

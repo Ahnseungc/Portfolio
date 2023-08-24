@@ -21,6 +21,7 @@ const Item = ({ id, title, category, isSelected }: ItemProps) => {
     setCookie("scroll_position", window.innerHeight * 2 + DIVIDER_HEIGHT * 2);
   };
 
+  console.log(id);
   return (
     <li className="item">
       <motion.div layoutId={`item-motion-${id}`}>
@@ -40,9 +41,9 @@ const Item = ({ id, title, category, isSelected }: ItemProps) => {
             >
               <Image
                 className="image"
-                width={100}
-                height={100}
-                src="/"
+                width={200}
+                height={150}
+                src={`/${id}.png`}
                 alt="/"
               />
             </motion.div>
