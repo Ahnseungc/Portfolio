@@ -1,0 +1,45 @@
+.switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 12vmin;
+  height: 7vmin;
+  padding: 0 2.4vmin;
+  border-radius: 30vmin;
+  background: rgba(101, 178, 255, 0.986);
+  /* position: fixed; */
+  transition: background-color 0.25s;
+}
+
+.handle {
+  display: block;
+  width: 6vmin;
+  height: 6vmin;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.switch[data-active="true"] {
+  background-color: #fff;
+  justify-content: flex-end;
+}
+
+.switch[data-active="true"] label {
+  background: rgba(101, 178, 255, 0.986);
+}

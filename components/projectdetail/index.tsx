@@ -10,7 +10,7 @@ interface Props {
   header: String;
   body: any;
   id: number;
-  sta: boolean;
+
   onChangeback: any;
 }
 

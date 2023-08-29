@@ -3,7 +3,7 @@ export const data = [
   {
     id: "React",
     category: "React",
-    title: "React입니다.",
+    title: "React",
     pointOfInterest: 80,
     backgroundColor: "#814A0E",
   },
@@ -11,22 +11,22 @@ export const data = [
   {
     id: "NEXT",
     category: "NEXTJS",
-    title: "NEXTJS입니다.",
+    title: "NEXTJS",
     pointOfInterest: 120,
     backgroundColor: "#959684",
   },
   // Photo by Alessandra Caretto on Unsplash
   {
-    id: "JS",
-    category: "JS",
-    title: "JS입니다.",
+    id: "VanliaJS",
+    category: "VanliaJS",
+    title: "VanliaJS",
     pointOfInterest: 260,
     backgroundColor: "#5DBCD2",
   },
   {
     id: "TS",
     category: "TS",
-    title: "TS입니다",
+    title: "TS",
     pointOfInterest: 260,
     backgroundColor: "#5DBCD2",
   },

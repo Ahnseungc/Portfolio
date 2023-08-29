@@ -6,7 +6,7 @@ export const ProjectMaincontainer = styled.div`
   justify-content: center; */
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-80%, -20%);
 
   width: 100vh;
   height: 100vh;

@@ -1,3 +1,5 @@
+import Toogle from "@components/Toggle";
+
 import StyledComponentsRegistry from "./lib/registry";
 
 export default function RootLayout({
@@ -9,6 +11,7 @@ export default function RootLayout({
     <html>
       <head />
       <body>
+        <Toogle />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
