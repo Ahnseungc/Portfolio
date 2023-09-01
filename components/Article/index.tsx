@@ -8,7 +8,7 @@ import { data } from "../../data";
 
 import type { ItemProps } from "../List";
 
-const Article = ({ id }: { id: string }) => {
+const Article = ({ id }: { id: any }) => {
   const { category, title } = data.find((data: ItemProps) => data.id === id.id);
 
   return (

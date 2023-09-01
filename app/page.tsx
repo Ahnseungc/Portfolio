@@ -8,6 +8,7 @@ import Education from "../components/education";
 import Introduce from "../components/introduce";
 import Project from "../components/project";
 import Skills from "../components/Skills";
+import Toogle from "../components/Toggle";
 
 import "../styles/page.css";
 
@@ -120,6 +121,7 @@ function Home({ params }: { params: { id: number } }): Props {
 
   return (
     <div className="outer Page-box" ref={outerDivRef}>
+      {/* <Toogle /> */}
       <div className="inner">
         <Introduce animation={animation} />
       </div>
@@ -136,10 +138,6 @@ function Home({ params }: { params: { id: number } }): Props {
         <Project Changeback={backChange} />
       </div>
       <div className="divider"></div>
-      {/* <div className="inner">
-        <Chat animation4={animation4} />
-      </div>
-      <div className="divider"></div> */}
     </div>
   );
 }

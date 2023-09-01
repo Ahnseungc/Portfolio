@@ -3,6 +3,8 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3vmin;
   row-gap: 3vmin;
+  width: 90%;
+  margin: 5%;
 }
 
 .item {
