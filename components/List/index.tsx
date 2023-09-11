@@ -32,20 +32,6 @@ const Item = ({ id, title, category, isSelected }: ItemProps) => {
               layoutId={`title-motion-${id}`}
             >
               <span className="category">{category}</span>
-              <h2 className="title">{title}</h2>
-            </motion.div>
-            <motion.div
-              className="image-motion"
-              aria-hidden="true"
-              layoutId={`image-motion-${id}`}
-            >
-              <Image
-                className="image"
-                width={200}
-                height={150}
-                src={`/${id}.png`}
-                alt="/"
-              />
             </motion.div>
           </div>
         </Link>

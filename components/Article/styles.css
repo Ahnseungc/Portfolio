@@ -102,6 +102,7 @@
   height: 100%;
 
   .content {
+    border-radius: 30px;
     height: 50vmin;
     background-color: #fff;
     padding: 6vmin 4vmin;
@@ -166,5 +167,6 @@ li {
 
 .backbtn {
   text-decoration: none;
-  color: black;
+  color: white;
+  margin-left: 3vh;
 }

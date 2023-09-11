@@ -34,6 +34,7 @@ export const Introdmaincontainer = styled.div`
 
   & p {
     background-color: white;
+    border: 1px solid black;
     border-radius: 25px;
     padding: 5%;
     font-size: 30px;

@@ -12,7 +12,7 @@ interface Props {
 }
 
 const Education: FC<Props> = ({ animation }) => {
-  console.log(animation);
+  
   const moveRef = useRef<HTMLDivElement>(undefined);
 
   const [pop, setPop] = useState<boolean>(false);

@@ -18,7 +18,9 @@ export const Container = styled.div`
   & .wrap {
     margin-top: 5vh;
     padding: 20px;
-    background-color: #ff7e36;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px gray;
     border-radius: 25px;
     width: 60%;
     height: 70%;
