@@ -22,6 +22,7 @@ export const Introdmaincontainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(84, 119, 173);
 
   & .face {
     border-radius: 50%;
@@ -37,9 +38,9 @@ export const Introdmaincontainer = styled.div`
     border: 1px solid black;
     border-radius: 25px;
     padding: 5%;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 50px;
-    font-weight: 500;
+    font-weight: 350;
   }
   & .DownArrow {
     opacity: 0.5;

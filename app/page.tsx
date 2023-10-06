@@ -3,6 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 import { getCookie, setCookie } from "cookies-next";
+import "../public/Font/font.css";
 
 import Education from "../components/education";
 import Introduce from "../components/introduce";

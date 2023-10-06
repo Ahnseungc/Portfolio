@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const React = () => {
@@ -13,7 +13,7 @@ const React = () => {
       <div className="Lib">
         <h3>
           ⚒️ SWR,Redux,Bootstrap,MaterialUI,React-Rotuer,Styled Components 등
-          다양한 라이브러리를 활용합니다.
+          활용성 높은 라이브러리를 활용합니다.
         </h3>
       </div>
       <br />
@@ -29,12 +29,11 @@ const React = () => {
       <h3>➗ 코드스플리팅을 통해 트래픽과 로딩속도를 향상시킵니다.</h3>
       <br />
       <br />
-      <br />
+
       <h3>📚 공식문서를 통해 끊임없이 배우고 적용합니다.</h3>
       <br />
 
-      <Image src={"/Skils/Velog.png"} width={500} height={500} alt="/" />
-      <h6>벨로그_안승찬</h6>
+      {/* <Image src={"/Skils/Velog.png"} width={500} height={500} alt="/" /> */}
       <br />
       <br />
       <br />

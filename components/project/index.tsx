@@ -11,7 +11,19 @@ const Project = ({ Changeback }) => {
     { id: 1, header: "URi.com", body: "/Uri.png", link: "uri" },
     { id: 2, header: "Speakdoc.com", body: "/Dawn.png", link: "dawn" },
     { id: 3, header: "DAWN.com", body: "/Speakdoc.png", link: "speakdoc" },
-    { id: 4, header: "LYMCAR.com", body: "/Lymcar.png", link: "lymcar" },
+    {
+      id: 4,
+      header: "한림노티.com",
+      body: "/한림노티.png",
+      link: "hallymnotice",
+    },
+    { id: 5, header: "LYMCAR.com", body: "/Lymcar.png", link: "lymcar" },
+    {
+      id: 6,
+      header: "ProtFollio.com",
+      body: "/Protfollio.png",
+      link: "protfollio",
+    },
   ]);
 
   return (

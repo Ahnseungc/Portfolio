@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 const NextJS = () => {
@@ -17,7 +16,7 @@ const NextJS = () => {
       <br />
       <div className="Pat">
         <h3>
-          👋🏼 NEXT.js에서 제공하는 성능이 뛰어난 자체 컴포넌트, dynamic routing,
+          👋🏼 NEXT.js에서 제공하는 성능이 뛰어난 자체 컴포넌트, Dynamic Routing,
           폴더 기반 라우팅 을 이해하고 활용합니다.
         </h3>
       </div>

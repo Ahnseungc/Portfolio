@@ -18,13 +18,13 @@ export const data = [
     backgroundColor: "#959684",
   },
   // Photo by Alessandra Caretto on Unsplash
-  {
-    id: "VanliaJS",
-    category: "VanliaJS",
-    title: "VanliaJS",
-    pointOfInterest: 260,
-    backgroundColor: "#5DBCD2",
-  },
+  // {
+  //   id: "JS",
+  //   category: "JS",
+  //   title: "JS",
+  //   pointOfInterest: 260,
+  //   backgroundColor: "#5DBCD2",
+  // },
   {
     id: "NodeJS",
     category: "NodeJS",

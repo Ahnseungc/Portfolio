@@ -7,44 +7,68 @@ export const Container = styled.div`
   & h1 {
     font-size: 60px;
     font-weight: 330;
-
-    margin-left: 5vh;
+    color: #5477ad;
+    text-align: end;
+    margin-right: 10vh;
+    margin-top: 5vh;
   }
 
   & h3 {
+    color: #5477ad;
+    font-weight: 700;
     font-size: 30px;
-    font-weight: 330;
   }
   & .wrap {
     margin-top: 5vh;
     padding: 20px;
     background-color: white;
     border: 1px solid black;
-    box-shadow: 1px 1px 1px 1px gray;
+    /* box-shadow: 1px 1px 1px 1px gray; */
     border-radius: 25px;
     width: 60%;
     height: 70%;
-    display: flex;
-    flex-direction: column;
-
     justify-content: center;
   }
 
+  & .introd {
+    font: "font1";
+    text-align: start;
+    margin-right: 10vw;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 3vh;
+    padding: 5px;
+  }
+
+  & .wrap_ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   & .wrap_li {
     list-style: none;
     font-size: 13px;
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
 
-  & p {
-    font-size: 20px;
+  & .wrap_li h3 {
+    margin-bottom: 3.5vh;
+  }
+  & .wrap_li p:not(:last-child) {
+    margin-bottom: 5vh;
+  }
+  & .wrap_li .link {
+    margin-bottom: 5vh;
   }
 
-  & .wrap_li:not(:last-child) {
-    margin-bottom: 3vh;
+  & p {
+    font-size: 20px;
   }
 
   & Link:hover {
