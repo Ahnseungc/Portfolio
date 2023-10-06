@@ -1,9 +1,8 @@
 "use client";
 
-import { Fragment, type FC } from "react";
+import { type FC } from "react";
 
-import { getCookie, setCookie, removeCookies } from "cookies-next";
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { useParams } from "next/navigation";
 
 import { Container } from "./style";
@@ -21,7 +20,6 @@ const Skills: FC<Props> = ({ animation }) => {
   return (
     <Container>
       <Header />
-
       <AnimatePresence>{id && <Article id={id} />}</AnimatePresence>
       <List selectedId={id !== undefined ? id : ""} />
     </Container>

@@ -5,6 +5,11 @@
   row-gap: 3vmin;
 }
 
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
 .item {
   background-color: antiquewhite;
   overflow: hidden;
@@ -103,7 +108,7 @@
 
   .content {
     border-radius: 30px;
-    height: 50vmin;
+    height: 80vmin;
     background-color: #fff;
     padding: 6vmin 4vmin;
     overflow-y: auto;

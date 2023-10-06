@@ -8,7 +8,7 @@ import Education from "../components/education";
 import Introduce from "../components/introduce";
 import Project from "../components/project";
 import Skills from "../components/Skills";
-import Toogle from "../components/Toggle";
+// import Toogle from "../components/Toggle";
 
 import "../styles/page.css";
 
@@ -22,7 +22,7 @@ function Home({ params }: { params: { id: number } }): Props {
   const [animation, setAnimation] = useState<boolean>(false);
   const [animation2, setAnimation2] = useState<boolean>(false);
   const [animation3, setAnimation3] = useState<boolean>(false);
-  const [animation4, setAnimation4] = useState<boolean>(false);
+  // const [animation4, setAnimation4] = useState<boolean>(false);
 
   useEffect(() => {
     const scrollPosition = Number(getCookie("scroll_position"));

@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+import NextJS from "../Stacks/NextJS";
+import NodeJS from "../Stacks/NodeJS";
+import React from "../Stacks/React";
+import VanliaJS from "../Stacks/VanliaJS";
 import "./styles.css";
 
 import { data } from "../../data";
@@ -31,7 +35,12 @@ const Article = ({ id }: { id: any }) => {
             <span className="category">{category}</span>
             <h2 className="title">{title}</h2>
           </motion.div>
-          <p></p>
+          <p>
+            {id.id === "React" ? <React /> : undefined}
+            {id.id === "NextJS" ? <NextJS /> : undefined}
+            {id.id === "NodeJS" ? <NodeJS /> : undefined}
+            {id.id === "VanliaJS" ? <VanliaJS /> : undefined}
+          </p>
         </div>
       </motion.div>{" "}
     </motion.div>
