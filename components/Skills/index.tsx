@@ -14,7 +14,7 @@ interface Props {
   animation: boolean;
 }
 
-const Skills: FC<Props> = ({ animation }) => {
+const Skills: FC<Props> = ({}) => {
   const { id } = useParams();
 
   return (

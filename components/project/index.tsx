@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 
-import { ProjectMaincontainer } from "./style";
-import ProjectDetail from "../projectdetail";
 import Link from "next/link";
 
+import { ProjectMaincontainer } from "./style";
+import ProjectDetail from "../projectdetail";
+
 const Project = ({ Changeback }) => {
-  const [list, setList] = useState([
+  const [list] = useState([
     { id: 1, header: "URi.com", body: "/Uri.png", link: "uri" },
     { id: 2, header: "Speakdoc.com", body: "/Dawn.png", link: "dawn" },
     { id: 3, header: "DAWN.com", body: "/Speakdoc.png", link: "speakdoc" },

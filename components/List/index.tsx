@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 import { setCookie } from "cookies-next";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 import "./style.css";
 
@@ -16,7 +15,7 @@ export interface ItemProps {
 
 const DIVIDER_HEIGHT = 5;
 
-const Item = ({ id, title, category, isSelected }: ItemProps) => {
+const Item = ({ id, category }: ItemProps) => {
   const itemClick = () => {
     setCookie("scroll_position", window.innerHeight * 2 + DIVIDER_HEIGHT * 2);
   };

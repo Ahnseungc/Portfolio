@@ -4,7 +4,7 @@ import { type FC, useCallback, useRef } from "react";
 
 import Image from "next/image";
 
-import { Body, Header, Project, StyledImageImage } from "./style";
+import { Body, Header, Project } from "./style";
 
 interface Props {
   header: String;

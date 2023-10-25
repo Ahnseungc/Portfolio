@@ -11,7 +11,7 @@ interface Props {
   animation: boolean;
 }
 
-const Education: FC<Props> = ({ animation }) => {
+const Education: FC<Props> = ({}) => {
   const moveRef = useRef<HTMLDivElement>(undefined);
 
   const [pop, setPop] = useState<boolean>(false);

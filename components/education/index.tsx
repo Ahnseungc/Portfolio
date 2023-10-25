@@ -1,13 +1,12 @@
 "use client";
 
-import { type FC, useEffect, useRef, useState } from "react";
+import { type FC } from "react";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Container } from "./style";
-
-import Link from "next/link";
 
 import "../../public/Font/font.css";
 
@@ -48,7 +47,8 @@ const Education: FC<Props> = ({ animation }) => {
         />
         <p>
           안녕하세요. 웹 프론트엔드 개발자 안승찬입니다. <br />
-          3년전 "Hello World"를 출력하며 개발자로서의 첫 발자취를 남겼습니다.
+          3년전 &quot;Hello World&quot;를 출력하며 개발자로서의 첫 발자취를
+          남겼습니다.
           <br />
           아직 배울 것이 많고, 성장할 수 있음에 감사합니다.
           <br />

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import { getCookie, setCookie } from "cookies-next";
 import "../public/Font/font.css";
@@ -17,7 +17,7 @@ const DIVIDER_HEIGHT = 5;
 
 type Props = {};
 
-function Home({ params }: { params: { id: number } }): Props {
+function Home({}: { params: { id: number } }): Props {
   const outerDivRef = useRef<HTMLInputElement>(undefined);
   const BackDivRef = useRef<HTMLDivElement>(undefined);
   const [animation, setAnimation] = useState<boolean>(false);
@@ -64,7 +64,7 @@ function Home({ params }: { params: { id: number } }): Props {
             behavior: "smooth",
           });
         } else if (scrollTop >= pageHeight * 3 && scrollTop < pageHeight * 4) {
-          setAnimation4(true);
+          // setAnimation4(true);
           outerDivRef.current.scrollTo({
             top: pageHeight * 4 + DIVIDER_HEIGHT * 2,
             left: 0,
