@@ -6,6 +6,9 @@ const nextConfig = {
     appDir: true,
     // scrollRestoration: true,
   },
+  images: {
+    domains: ["velog.velcdn.com", "user-images.githubusercontent.com"],
+  },
 };
 
 module.exports = nextConfig;

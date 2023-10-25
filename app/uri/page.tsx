@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 const Uri = () => {
@@ -7,20 +8,28 @@ const Uri = () => {
     <div>
       <h1>Chatbot</h1>
       <h2>[KBSC공모전]세상을 바꾸는 소프트웨어(장려상 수상작) 🥇</h2>
-      <img
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/8a9a1843-95fa-4729-b310-f2879ee7e3e0/image.png"
         }
-        width="100%"
+        width={0}
+        height={0}
+        sizes="100vw"
         alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
-      <img
+
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/6d658e6b-a3b4-4308-8353-78d87566d527/image.png"
         }
-        width="100%"
+        width={0}
+        height={0}
+        sizes="100vw"
         alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
+
       <h3>📖 상세 내용</h3>
       <p>
         2022 KBSC 소프트웨어 경진대회 본선 진출 작품 입니다! <br />
@@ -34,10 +43,16 @@ const Uri = () => {
       </p>
       <h3>📌 주요 기능</h3>
       <h4>심리상담 챗봇</h4>
-      <img
+
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/8dad33bd-2a55-4613-b1b3-79163836db0f/image.png"
         }
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
       <p>
         오늘은 무슨 일이 있었는지 이야기를 나누면서 지친 마음을 달랠 수
@@ -46,22 +61,40 @@ const Uri = () => {
         두었습니다.
       </p>
       <h4>오늘의 할 일 추천</h4>
-      <img
+
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/0f0f1043-b1b3-4a78-96b9-2e693043b609/image.png"
         }
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
       <h4>감정캘린더</h4>
-      <img
+
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/2535ce69-84cb-4d36-85cb-1e67e6698adc/image.png"
         }
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
-      <img
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/77028bfa-31cf-49d4-a19e-ea9cb1a6f793/image.png"
         }
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
+
       <p>
         감정캘린더에 감정들을 기록 하게 되면, 긍정적인 감정(기쁨, 행복)과
         부정적인 감정(슬픔, 우울, 분노)의 수치들을 그래프로 확인할 수 있고,{" "}
@@ -74,11 +107,18 @@ const Uri = () => {
         수 있게 했습니다.
       </p>
       <h4>우울증 진단</h4>
-      <img
+
+      <Image
         src={
           "https://velog.velcdn.com/images/dldmswo1209/post/a2c52e1c-13e4-418b-b362-0992b71f7ce0/image.png"
         }
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
+
       <p>
         Uri는 사용자의 감정기록을 분석하여 최근 2주간 우울한 감정이 지속될 경우,
         자가 진단을 제공합니다. <br />
@@ -98,11 +138,16 @@ const Uri = () => {
         <br />- Figma
       </p>
       <h3> 🤝 Colaborators</h3>
-      <img
+
+      <Image
         src={
           "https://user-images.githubusercontent.com/101651909/200470504-0cafe454-88e7-4015-8c49-5699f33a9d47.jpg"
         }
-        width="100%"
+        width={0}
+        height={0}
+        sizes="100vw"
+        alt="/"
+        style={{ width: "100%", height: "auto", borderRadius: "30px" }}
       />
 
       <h3>시연 영상</h3>
