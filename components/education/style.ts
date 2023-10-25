@@ -31,13 +31,19 @@ export const Container = styled.div`
   }
 
   & .introd {
+    display: flex;
     font: "font1";
     text-align: start;
     margin-right: 10vw;
     font-weight: 500;
     line-height: 1.5;
-    margin-left: 3vh;
-    padding: 5px;
+    margin-left: 1vh;
+    padding: 2px;
+    align-items: center;
+
+    & .face {
+      border-radius: 50%;
+    }
   }
 
   & .wrap_ul {

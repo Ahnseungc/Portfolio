@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 import NextJS from "../Stacks/NextJS";
 import NodeJS from "../Stacks/NodeJS";
 import React from "../Stacks/React";
+// eslint-disable-next-line import/order
 import VanliaJS from "../Stacks/VanliaJS";
 import "./styles.css";
-
+// eslint-disable-next-line import/order
 import { data } from "../../data";
 
 import type { ItemProps } from "../List";

@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const StyledImageImage = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
 export const Project = styled.div<{ num: number }>`
   width: 60vh;
   height: 35vh;
@@ -73,6 +78,7 @@ export const Body = styled.div`
   height: 95%;
   opacity: 0.8;
   border-radius: 0 0 0.5rem 0.5rem;
+  position: relative;
   /* border-right: 0.5px solid;
   border-left: 0.5px solid; */
   & .project {

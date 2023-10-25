@@ -4,13 +4,12 @@ import { type FC, useCallback, useRef } from "react";
 
 import Image from "next/image";
 
-import { Body, Header, Project } from "./style";
+import { Body, Header, Project, StyledImageImage } from "./style";
 
 interface Props {
   header: String;
   body: any;
   id: number;
-
   onChangeback: any;
 }
 
@@ -46,8 +45,9 @@ const ProjectDetail: FC<Props> = ({ header, body, id, onChangeback }) => {
         <Image
           className="project"
           src={body}
-          width={535}
-          height={300}
+          fill
+          // width={200}
+          // height={200}
           alt="/"
         />
       </Body>

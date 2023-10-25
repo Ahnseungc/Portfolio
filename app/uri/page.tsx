@@ -89,8 +89,14 @@ const Uri = () => {
 
       <h3>🛠사용 기술 및 라이브러리</h3>
       <p>
-        - Android Studio - Kotlin - Python - Pytorch - Flask - Firebase Realtime
-        Database - SKT-AI/KoGPT2 - Figma
+        - Android Studio <br />
+        - Kotlin <br />
+        - Python <br />
+        - Pytorch <br />
+        - Flask <br />
+        - Firebase Realtime
+        <br />- SKT-AI/KoGPT2
+        <br />- Figma
       </p>
       <h3> 🤝 Colaborators</h3>
       <img

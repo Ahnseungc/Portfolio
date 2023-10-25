@@ -39,13 +39,20 @@ const Education: FC<Props> = ({ animation }) => {
     <Container>
       <h1>저는 이런 사람입니다</h1>
       <div className="introd">
+        <Image
+          className="face"
+          src="/face.jpg"
+          alt="/"
+          width={300}
+          height={300}
+        />
         <p>
           안녕하세요. 웹 프론트엔드 개발자 안승찬입니다. <br />
           3년전 "Hello World"를 출력하며 개발자로서의 첫 발자취를 남겼습니다.
           <br />
           아직 배울 것이 많고, 성장할 수 있음에 감사합니다.
           <br />
-          개발과 함꼐한 동료, 그리고 JS를 사랑합니다.
+          개발과 함께한 동료, 그리고 JS를 사랑합니다.
         </p>
       </div>
       <div className="wrap">
