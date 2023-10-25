@@ -6,7 +6,7 @@ import Link from "next/link";
 const Uri = () => {
   return (
     <div>
-      <h1>Chatbot</h1>
+      <h1>URI(소아 우울)</h1>
       <h2>[KBSC공모전]세상을 바꾸는 소프트웨어(장려상 수상작) 🥇</h2>
       <Image
         src={
