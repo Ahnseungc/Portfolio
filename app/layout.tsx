@@ -9,7 +9,9 @@ export default function RootLayout({
     <html>
       <head />
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>          
+          {children}
+          </StyledComponentsRegistry>
       </body>
     </html>
   );

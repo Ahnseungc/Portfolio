@@ -93,12 +93,14 @@ const Education: FC<Props> = ({ animation }) => {
             >
               https://velog.io/@omnipo
             </Link>
-            <p>
-              아이디어해커톤(2021.07.20) 한림대
+            <p style={{ fontSize: "15px", lineHeight: "20px" }}>
+              아이디어해커톤(2021.07.20) 장려상 한림대
               <br />
-              KBSC 공모전(2022.10.16) 국민은행
+              KBSC 공모전(2022.10.16) 장려상 국민은행
               <br />
-              캡스톤 디자인(2023.06.12) 한림대
+              캡스톤 디자인(2023.06.12) 장려상 한림대
+              <br />
+              오픈소스SW웹해커톤(2023.11.02) 금상 한림대
             </p>
           </motion.li>
         </motion.ul>

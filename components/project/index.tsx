@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import Link from "next/link";
 
-import { ProjectMaincontainer, Container } from "./style";
+import { ProjectMaincontainer } from "./style";
 import ProjectDetail from "../projectdetail";
 
 const Project = ({ Changeback }) => {
